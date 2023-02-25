@@ -38,7 +38,7 @@ private:
     char *game_data_dir;
 
     void preSpecialize(const char *package_name, const char *app_data_dir) {
-        LOGI("detect package: %s", package_name);
+        LOGD("detect package: %s", package_name);
         if (strcmp(package_name, GamePackageName) == 0) {
             LOGI("detect game: %s", package_name);
             enable_hack = true;
