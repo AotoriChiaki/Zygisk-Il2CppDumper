@@ -14,6 +14,7 @@ public:
     void onLoad(Api *api, JNIEnv *env) override {
         this->api = api;
         this->env = env;
+        LOGD("load ok");
     }
 
     void preAppSpecialize(AppSpecializeArgs *args) override {
